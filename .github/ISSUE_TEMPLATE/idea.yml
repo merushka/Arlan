@@ -1,0 +1,36 @@
+name: Новая идея или знание
+description: Добавить предложение, проблему, знание или материал
+title: "[Идея] "
+labels: ["идея", "новое"]
+body:
+  - type: dropdown
+    id: kind
+    attributes:
+      label: Тип записи
+      options:
+        - Идея
+        - Знание
+        - Предложение
+        - Проблема
+        - Решение
+    validations:
+      required: true
+  - type: textarea
+    id: context
+    attributes:
+      label: Описание
+      description: Что происходит и почему это важно?
+    validations:
+      required: true
+  - type: textarea
+    id: proposal
+    attributes:
+      label: Предложение
+      description: Какой результат или решение вы предлагаете?
+    validations:
+      required: true
+  - type: textarea
+    id: materials
+    attributes:
+      label: Фотографии, голосовые и материалы
+      description: Перетащите файлы сюда или добавьте ссылки.
